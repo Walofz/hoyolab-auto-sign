@@ -12,7 +12,7 @@ A lightweight, secure, and free script that automatically collect HoYoLAB daily 
 Supports Genshin Impact, Honkai Impact 3rd, and Honkai: Star Rail, Zenless Zone Zero. Support multiple accounts.
 
 ## Features
-* **Lightweight** - The script only requires minimal configuration and is only 90 lines of code.
+* **Lightweight** - The script only requires minimal configuration and is only 101 lines of code (add new game).
 * **Secure** - The script can be self-deployed to Google Apps Script, no worries about data leaks.
 * **Free** - Google Apps Script is currently a free service.
 * **Simple** - The script can run without a browser and will automatically notify you through Discord or Telegram.
