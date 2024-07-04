@@ -38,7 +38,8 @@ const profiles = [
   { token: "ltoken_v2=v2_CANARIAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX3406; ltuid_v2=26XXXXX20;", 
     genshin: true, 
     honkai_star_rail: true, 
-    honkai_3: false, 
+    honkai_3: false,
+    zzz: true,
     accountName: "ВАШ НИК" }
 ];
 ```
