@@ -4,13 +4,12 @@
 </h1>
 
 <p align="center">
-    <img src="https://img.shields.io/github/license/canaria3406/hoyolab-auto-sign?style=flat-square">
-    <img src="https://img.shields.io/github/stars/canaria3406/hoyolab-auto-sign?style=flat-square">
-    <br><a href="/README_zh-tw.md">繁體中文</a>　<b>English</b>　<a href="/README_ru-ru.md">Русский</a>
+    <img src="https://img.shields.io/github/license/walofz/hoyolab-auto-sign?style=flat-square">
+    <img src="https://img.shields.io/github/stars/walofz/hoyolab-auto-sign?style=flat-square">
 </p>
 
 A lightweight, secure, and free script that automatically collect HoYoLAB daily check in rewards.  
-Supports Genshin Impact, Honkai Impact 3rd, and Honkai: Star Rail. Support multiple accounts.
+Supports Genshin Impact, Honkai Impact 3rd, and Honkai: Star Rail, Zenless Zone Zero. Support multiple accounts.
 
 ## Features
 * **Lightweight** - The script only requires minimal configuration and is only 90 lines of code.
@@ -79,7 +78,13 @@ const profiles = [
    If you want, set it to true. If not, please set it to false.  
    If you do not play Honkai Impact 3rd, or your account is not bound to a uid, please set it to false.
 
-5. **accountName** - Please enter your customized nickname.
+5. **zzz**
+
+   Whether to enable auto check in for Zenless Zone Zero.  
+   If you want, set it to true. If not, please set it to false.  
+   If you do not play Honkai Impact 3rd, or your account is not bound to a uid, please set it to false.
+
+6. **accountName** - Please enter your customized nickname.
 
    Please enter your customized HoYoLAB or in-game nickname here.
 
@@ -142,65 +147,11 @@ const telegramBotToken = "6XXXXXXXXX:AAAAAAAAAAXXXXXXXXXX8888888888Peko"
 
 </details>
 
-## Demo
-If the auto check in process is success, it will send "OK".  
-If you have already check in today, it will send "Traveler/Trailblazer/Captain, you've already checked in today"  
-
-<details>
-<summary><b>Single HoYoLAB account auto check-in with Discord notification and ping.</b></summary>
-Enable Genshin Impact and Honkai: Star Rail auto check in, enable Discord notify, ping in Discord.
-
-```javascript
-const profiles = [
-  { token: "account_mid_v2=123xyzabcd_hi; account_id_v2=26XXXXX20; ltoken_v2=v2_CANARIAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX3406; ltmid_v2=123xyzabcd_hi; ltuid_v2=26XXXXX20;", 
-    genshin: true, 
-    honkai_star_rail: true, 
-    honkai_3: false,
-    zzz: true,
-    accountName: "HuTao" }
-];
-
-const discord_notify = true
-const myDiscordID = "240000800000300040"
-const discordWebhook = "https://discord.com/api/webhooks/10xxxxxxxxxxxxxxx60/6aXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXnB"
-```
-![image](https://github.com/canaria3406/hoyolab-auto-sign/blob/main/pic/E02.png)
-
-</details>
-
-<details>
-<summary><b>Two HoYoLAB accounts auto check-in with Telegram notification.</b></summary>
-Enable Genshin Impact auto check-in on accountA, Honkai Impact 3rd auto check-in on accountB, enable Telegram notify.
-
-```javascript
-const profiles = [
-  { token: "account_mid_v2=123xyzabcd_hi; account_id_v2=26XXXXX20; ltoken_v2=v2_CANARIAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX3406; ltmid_v2=123xyzabcd_hi; ltuid_v2=26XXXXX20;", 
-    genshin: true, 
-    honkai_star_rail: false, 
-    honkai_3: false,
-    zzz: true,
-    accountName: "accountA" },
-  { token: "account_mid_v2=456qwertyu_hi; account_id_v2=28XXXXX42; ltoken_v2=v2_GENSHINXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX5566; ltmid_v2=456qwertyu_hi; ltuid_v2=28XXXXX42;", 
-    genshin: false, 
-    honkai_star_rail: false, 
-    honkai_3: true,
-    zzz: true,
-    accountName: "accountB" }
-];
-
-const telegram_notify = true
-const myTelegramID = "1XXXXXXX0"
-const telegramBotToken = "6XXXXXXXXX:AAAAAAAAAAXXXXXXXXXX8888888888Peko"
-```
-![image](https://github.com/canaria3406/hoyolab-auto-sign/blob/main/pic/E03.png)
-
-</details>
-
 ## Changelog
-2022-12-30 Project launched.  
-2023-04-27 Add support for Honkai Impact 3rd, and Honkai: Star Rail.  
-2023-04-27 Add switch for Discord notify.  
-2023-05-12 Update get token process[#2](https://github.com/canaria3406/hoyolab-auto-sign/pull/2).  
-2023-05-12 Add Telegram notify support[#3](https://github.com/canaria3406/hoyolab-auto-sign/pull/3).  
-2023-05-13 Support multiple HoYoLAB accounts[#4](https://github.com/canaria3406/hoyolab-auto-sign/pull/4).
-2024-07-04 Add support for Zenless Zone Zero.
+* 2022-12-30 Project launched.  
+* 2023-04-27 Add support for Honkai Impact 3rd, and Honkai: Star Rail.  
+* 2023-04-27 Add switch for Discord notify.  
+* 2023-05-12 Update get token process[#2](https://github.com/canaria3406/hoyolab-auto-sign/pull/2).  
+* 2023-05-12 Add Telegram notify support[#3](https://github.com/canaria3406/hoyolab-auto-sign/pull/3).  
+* 2023-05-13 Support multiple HoYoLAB accounts[#4](https://github.com/canaria3406/hoyolab-auto-sign/pull/4).
+* 2024-07-04 Add support for Zenless Zone Zero.
