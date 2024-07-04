@@ -204,3 +204,4 @@ const telegramBotToken = "6XXXXXXXXX:AAAAAAAAAAXXXXXXXXXX8888888888Peko"
 2023-05-12 Обновление процесса gettoken[#2](https://github.com/canaria3406/hoyolab-auto-sign/pull/2).
 2023-05-12 Добавлена поддержка уведомлений Telegram[#3](https://github.com/canaria3406/hoyolab-auto-sign/pull/3).
 2023-05-13 Поддержка нескольких учетных записей HoYoLAB[#4](https://github.com/canaria3406/hoyolab-auto-sign/pull/4)
+2024-07-04 Добавлена поддержка Zenless Zone Zero.
