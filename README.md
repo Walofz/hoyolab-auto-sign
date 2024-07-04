@@ -155,7 +155,8 @@ const profiles = [
   { token: "account_mid_v2=123xyzabcd_hi; account_id_v2=26XXXXX20; ltoken_v2=v2_CANARIAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX3406; ltmid_v2=123xyzabcd_hi; ltuid_v2=26XXXXX20;", 
     genshin: true, 
     honkai_star_rail: true, 
-    honkai_3: false, 
+    honkai_3: false,
+    zzz: true,
     accountName: "HuTao" }
 ];
 
@@ -176,12 +177,14 @@ const profiles = [
   { token: "account_mid_v2=123xyzabcd_hi; account_id_v2=26XXXXX20; ltoken_v2=v2_CANARIAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX3406; ltmid_v2=123xyzabcd_hi; ltuid_v2=26XXXXX20;", 
     genshin: true, 
     honkai_star_rail: false, 
-    honkai_3: false, 
+    honkai_3: false,
+    zzz: true,
     accountName: "accountA" },
   { token: "account_mid_v2=456qwertyu_hi; account_id_v2=28XXXXX42; ltoken_v2=v2_GENSHINXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX5566; ltmid_v2=456qwertyu_hi; ltuid_v2=28XXXXX42;", 
     genshin: false, 
     honkai_star_rail: false, 
-    honkai_3: true, 
+    honkai_3: true,
+    zzz: true,
     accountName: "accountB" }
 ];
 
